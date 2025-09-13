@@ -191,3 +191,125 @@
         opacity: 0.6;
     }
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .article-detail {
+        padding: 1.2rem;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+
+    .article-title {
+        font-size: 1.6rem;
+    }
+
+    .article-meta {
+        font-size: 0.85rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .article-cover {
+        max-height: 250px;
+        border-radius: 0.75rem;
+    }
+
+    .article-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .related-list {
+        grid-template-columns: 1fr;
+    }
+
+    .related-info h3 {
+        font-size: 1rem;
+    }
+
+    .related-info p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .article-title {
+        font-size: 1.8rem;
+    }
+
+    .article-meta {
+        font-size: 0.9rem;
+    }
+
+    .article-text {
+        font-size: 1rem;
+    }
+
+    .related-list {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .article-detail {
+        padding: 2rem;
+    }
+
+    .article-title {
+        font-size: 2rem;
+    }
+
+    .article-meta {
+        font-size: 1rem;
+    }
+
+    .article-text {
+        font-size: 1.05rem;
+    }
+
+    .related-list {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .article-detail {
+        padding: 2.5rem;
+    }
+
+    .article-title {
+        font-size: 2.2rem;
+    }
+
+    .article-text {
+        font-size: 1.1rem;
+    }
+
+    .related-list {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .article-detail {
+        max-width: 1000px;
+    }
+
+    .article-title {
+        font-size: 2.4rem;
+    }
+
+    .article-text {
+        font-size: 1.15rem;
+        line-height: 1.85;
+    }
+
+    .related-list {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
