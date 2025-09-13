@@ -1,0 +1,132 @@
+.author-management {
+    background:#FFFFFF;
+    /* light background */
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.author-management-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #0F172A;
+    /* dark text */
+}
+
+/* Table Styles */
+.author-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.author-table th,
+.author-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB;
+    /* subtle separator */
+}
+
+.author-table th {
+    background: #2563EB;
+    /* primary color header */
+    color: #FFFFFF;
+    /* white text */
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.author-table td {
+    background: #FFFFFF;
+    /* white rows */
+    color: #0F172A;
+    /* dark text */
+    transition: background 0.2s ease;
+}
+
+.author-table tr:hover td {
+    background: #E0ECFF;
+    /* light blue hover effect */
+}
+
+/* Role badges */
+.role-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.role-badge.admin {
+    background: #2563EB;
+    /* primary */
+    color: #FFFFFF;
+}
+
+.role-badge.author {
+    background: #FF3B7F;
+    /* accent */
+    color: #FFFFFF;
+}
+.delete-btn {
+    background: #ef4444;
+    /* red */
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+    /* darker red */
+}
+
+/* ✅ Mobile Responsive Layout */
+@media (max-width: 600px) {
+    .author-table thead {
+        display: none;
+        /* hide headers */
+    }
+
+    .author-table,
+    .author-table tbody,
+    .author-table tr,
+    .author-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .author-table tr {
+        margin-bottom: 16px;
+        border: 1px solid #E5E7EB;
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .author-table td {
+        text-align: right;
+        padding: 8px 12px;
+        border: none;
+        position: relative;
+    }
+
+    .author-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 12px;
+        top: 8px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #374151;
+        /* medium gray for label */
+    }
+}

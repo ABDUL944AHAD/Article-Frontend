@@ -1,0 +1,55 @@
+.article-detail-skeleton {
+    padding: 1.5rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.skeleton {
+    background: #e2e8f0;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-title {
+    height: 32px;
+    width: 70%;
+}
+
+.skeleton-meta {
+    height: 14px;
+    width: 40%;
+}
+
+.skeleton-image {
+    height: 300px;
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+.skeleton-text {
+    height: 16px;
+    border-radius: 0.3rem;
+}
+
+.skeleton-text.short {
+    width: 40%;
+}
+
+.skeleton-text.long {
+    width: 90%;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #f1f5f9;
+    }
+
+    50% {
+        background-color: #e2e8f0;
+    }
+
+    100% {
+        background-color: #f1f5f9;
+    }
+}

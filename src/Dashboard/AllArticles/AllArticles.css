@@ -1,0 +1,266 @@
+.dashboard-articles {
+    padding: 3rem 1.5rem 1rem 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    font-family: 'Playwrite AU QLD';
+    margin-top: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.dashboard-articles-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-articles-header h2 {
+    font-size: 1.75rem;
+    color: #0F172A;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-articles-header p {
+    font-size: 1rem;
+    color: #6B7280;
+    margin-bottom: 1.5rem;
+}
+
+/* Category Filters */
+.dashboard-category-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.dashboard-category-filters button {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    color: #1F2937;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: 'Playwrite AU QLD';
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.dashboard-category-filters button.active {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    border-color: #2563EB;
+}
+
+/* Grid */
+.dashboard-articles-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Article Card */
+.dashboard-article-card {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    /* whole card clickable */
+    position: relative;
+}
+
+.dashboard-article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* Ensure update/delete buttons don't inherit card pointer */
+.dashboard-footer-actions button {
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* Thumbnail */
+.dashboard-article-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content */
+.dashboard-article-content {
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.dashboard-article-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0F172A;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-article-content p {
+    font-size: 0.95rem;
+    color: #4B5563;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Footer */
+.dashboard-article-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.dashboard-author-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.dashboard-author-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+    color: #1F2937;
+}
+
+.dashboard-footer-actions {
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.dashboard-footer-actions button {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: 'Playwrite AU QLD';
+    transition: all 0.3s ease;
+}
+
+.dashboard-delete-button {
+    background-color: #EF4444;
+}
+
+.dashboard-footer-actions button:hover {
+    opacity: 0.9;
+}
+
+/* Buttons Row */
+.dashboard-articles-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-articles-buttons button {
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dashboard-load-more-btn {
+    background-color: #2563EB;
+    color: #fff;
+    border: none;
+}
+
+.dashboard-load-more-btn:hover {
+    background-color: #1E40AF;
+}
+
+.dashboard-show-less-btn {
+    background-color: #fff;
+    color: #2563EB;
+    border: 1px solid #2563EB;
+}
+
+.dashboard-show-less-btn:hover {
+    background-color: #2563EB;
+    color: #fff;
+}
+
+/* ================== RESPONSIVE ================== */
+
+/* Tablet */
+@media (max-width: 1023px) {
+    .dashboard-articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-articles-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .dashboard-articles-header p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .dashboard-articles {
+        padding: 2rem 1rem;
+    }
+
+    .dashboard-articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-articles-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .dashboard-articles-header p {
+        font-size: 0.85rem;
+    }
+
+    .dashboard-article-thumbnail {
+        height: 160px;
+    }
+
+    .dashboard-article-content h3 {
+        font-size: 1rem;
+    }
+
+    .dashboard-article-content p {
+        font-size: 0.85rem;
+    }
+
+    .dashboard-footer-actions button {
+        font-size: 0.75rem;
+        padding: 0.35rem 0.7rem;
+    }
+}

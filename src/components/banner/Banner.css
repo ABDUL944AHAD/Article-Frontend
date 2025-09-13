@@ -1,0 +1,142 @@
+/* Banner.css */
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBFFFF;
+    padding: 4rem 2rem;
+    border-radius: 1.5rem;
+    margin: 4rem auto;
+    max-width: 1200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    gap: 2rem;
+}
+
+.banner-content {
+    flex: 1;
+}
+
+.banner-content h2 {
+    font-family: 'Playwrite AU QLD', sans-serif;
+    font-size: 2.2rem;
+    color: #0F172A;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.banner-content p {
+    font-size: 1.1rem;
+    color: #334155;
+    line-height: 1.7;
+    margin-bottom: 1.8rem;
+}
+
+.banner-cta {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.banner-cta:hover {
+    background-color: #1E40AF;
+    transform: translateY(-2px);
+}
+
+.banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.banner-image img:hover {
+    transform: scale(1.03);
+}
+
+/* -------------------------
+   RESPONSIVE BREAKPOINTS
+------------------------- */
+
+/* Mobile: stack content vertically */
+@media (max-width: 639px) {
+    .banner-section {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .banner-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .banner-cta {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .banner-image img {
+        max-width: 100%;
+    }
+}
+
+/* Tablet: slightly smaller text, keep side-by-side if space allows */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .banner-content h2 {
+        font-size: 1.9rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .banner-cta {
+        font-size: 1rem;
+        padding: 0.75rem 1.8rem;
+    }
+
+    .banner-image img {
+        max-width: 400px;
+    }
+}
+
+/* Desktop: larger headings and text, maintain flex layout */
+@media (min-width: 1024px) {
+    .banner-content h2 {
+        font-size: 2.4rem;
+    }
+
+    .banner-content p {
+        font-size: 1.15rem;
+    }
+
+    .banner-cta {
+        font-size: 1.05rem;
+        padding: 0.85rem 2rem;
+    }
+
+    .banner-image img {
+        max-width: 500px;
+    }
+}

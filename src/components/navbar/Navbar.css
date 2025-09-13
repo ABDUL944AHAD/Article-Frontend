@@ -1,0 +1,275 @@
+/* =============================
+   🌐 Base Navbar Styles
+============================= */
+.navbar {
+    background-color: #0F172A;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    
+}
+
+/* =============================
+   🌐 Nav Links (Desktop)
+============================= */
+.leftSide {
+    display: flex;
+    margin-right: 4rem;
+}
+
+.leftSide>.navLinks {
+    margin-right: 4rem;
+    display: flex;
+    list-style: none;
+}
+
+.navLinks {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navLinks>li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    line-height: 1;
+    /* Prevents extra spacing */
+    display: flex;
+    align-items: center;
+    /* Vertically centers content */
+}
+
+.navLinks>li:hover {
+    color: #3B82F6 !important;
+}
+
+/* =============================
+   🌐 Buttons
+============================= */
+.button-primary {
+    background-color: #2563EB;
+    color: white;
+    width: 8rem;
+    height: 2.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.019px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: #1E40AF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.button-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+.button-primary:hover .button-link {
+    color: white;
+}
+
+/* =============================
+   🌐 Hamburger Menu (Mobile)
+============================= */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* 🔹 Base Mobile Menu Overlay */
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    inset: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+/* Open state */
+.mobileMenu.open {
+    left: 0;
+}
+
+/* List Styles */
+.mobileMenu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.mobileMenu ul li {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.mobileMenu a {
+    font-weight: 600;
+}
+
+.mobileMenu .mobile-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* =============================
+   🌐 Homepage Overlay (Dark)
+============================= */
+.home-overlay {
+    background: #0F172A;
+}
+
+.home-overlay a,
+.home-overlay .close-btn {
+    color: #fff;
+}
+
+.home-overlay .mobile-button {
+    background: #2563EB;
+    color: #fff;
+}
+
+.home-overlay .mobile-button:hover {
+    background: #1E40AF;
+}
+
+/* =============================
+   📱 Dashboard Overlay (Light)
+============================= */
+.dashboard-overlay {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+}
+
+.dashboard-overlay a,
+.dashboard-overlay .close-btn {
+    color: #0F172A;
+}
+
+.dashboard-overlay .mobile-button {
+    background: #2563EB;
+    /* primary blue */
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect with gradient + glow */
+.dashboard-overlay .mobile-button:hover {
+    background: linear-gradient(135deg, #1E40AF, #2563EB);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.6), 0 0 25px rgba(59, 130, 246, 0.4);
+    transform: translateY(-2px);
+}
+
+.dashboard-overlay ul li {
+    font-size: 1.3rem;
+    
+}
+ .dashboard-overlay ul li a{
+    color: #0F172A;
+ }
+
+
+
+/* =============================
+   📱 Dashboard Transparent Navbar
+============================= */
+
+.transparent-navbar {
+        background-color: #0F172A;
+        /* same as homepage */
+        color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.transparent-navbar .hamburger {
+    color:white;
+    /* black burger icon for visibility */
+}
+
+.transparent-navbar a {
+    color: white; 
+}
+
+.transparent-navbar .button-primary {
+    background: #2563eb;
+    color: #fff;
+}
+
+.transparent-navbar a:hover {
+    color: #2563eb;
+}
+/* =============================
+   📱 Responsive
+============================= */
+@media (max-width: 600px) {
+    .leftSide {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

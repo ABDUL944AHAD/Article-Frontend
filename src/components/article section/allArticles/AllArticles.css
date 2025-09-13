@@ -1,0 +1,212 @@
+.all-articles {
+    padding: 4rem 1.5rem 0 1.5rem;
+    background-color: #FBFFFF;
+    text-align: center;
+    font-family: 'Playwrite AU QLD';
+}
+
+.articles-header h2 {
+    font-size: 2rem;
+    color: #1F2937;
+    margin-bottom: 0.5rem;
+}
+
+.articles-header p {
+    font-size: 1rem;
+    color: #6B7280;
+    margin-bottom: 1rem;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.allarticles-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.article-card {
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.article-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 12px 28px rgba(59, 130, 246, 0.25);
+}
+
+.article-card img.article-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+}
+
+.article-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 1.25rem;
+}
+
+.article-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0F172A;
+}
+
+.article-content p {
+    font-size: 0.95rem;
+    color: #4B5563;
+    margin-bottom: 1rem;
+}
+
+.article-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.load-btn {
+    background-color: #2563EB;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Playwrite AU QLD';
+}
+
+.load-btn:hover {
+    background-color: #1E40AF;
+}
+
+.article-categories {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+/* Only backend articles */
+.backend-article {
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.backend-article img.article-thumbnail {
+    height: 180px;
+}
+
+.backend-article .article-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.backend-article .article-content h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* -------------------------
+   RESPONSIVE BREAKPOINTS
+------------------------- */
+
+/* Small screens (mobile) */
+@media (max-width: 639px) {
+    .articles-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .articles-header p {
+        font-size: 0.9rem;
+    }
+
+    .article-content h3 {
+        font-size: 1rem;
+    }
+
+    .article-content p {
+        font-size: 0.85rem;
+    }
+
+    .allarticles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium screens (tablet) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .articles-header h2 {
+        font-size: 2rem;
+    }
+
+    .articles-header p {
+        font-size: 1rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .article-content p {
+        font-size: 0.95rem;
+    }
+
+    .allarticles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+    .articles-header h2 {
+        font-size: 2.4rem;
+    }
+
+    .articles-header p {
+        font-size: 1.1rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .article-content p {
+        font-size: 1rem;
+    }
+
+    .allarticles-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

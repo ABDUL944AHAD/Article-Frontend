@@ -1,0 +1,193 @@
+.article-detail {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: #FBFFFF;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    font-family: 'Playwrite AU QLD', sans-serif;
+    line-height: 1.8;
+}
+
+.article-title {
+    font-size: 2.4rem;
+    color: #0F172A;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.article-meta {
+    font-size: 1rem;
+    color: #64748B;
+   
+    margin-bottom: 2rem;
+}
+
+.article-author {
+    color: #2563EB;
+    font-weight: 600;
+}
+
+.article-cover {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.article-text {
+    margin-bottom: 1.5rem;
+        /* space between paragraphs */
+        line-height: 1.8;
+        /* better readability */
+        font-size: 1.1rem;
+        /* slightly bigger text */
+        color: #0f172a;
+}
+
+.article-text h1,
+.article-text h2 {
+  margin: 1.5rem 0 1rem;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.article-text p {
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #334155;
+}
+
+.article-text ul {
+  margin: 1rem 0 1rem 1.5rem;
+  list-style: disc;
+}
+
+/* Inline images (after the banner) */
+.article-text img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+    transform: scaleX();
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional hover effect */
+.article-text img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ✅ Social Share */
+.social-share {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #E2E8F0;
+}
+
+.social-share p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #0F172A;
+}
+
+.social-share a {
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #2563EB;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.social-share a:hover {
+    color: #1E40AF;
+}
+
+.related-articles {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #E2E8F0;
+}
+
+.related-articles h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #0F172A;
+    font-weight: 700;
+}
+
+.related-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.related-card {
+    display: flex;
+    flex-direction: column;
+    background: #F1F5F9;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.related-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.related-thumbnail {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-bottom: 0.8rem;
+}
+
+.related-info h3 {
+    font-size: 1.1rem;
+    color: #0F172A;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.related-info p {
+    font-size: 0.9rem;
+    color: #64748B;
+}
+/* ✅ Loading State */
+.loading-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* centers vertically */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FF3B7F;
+    /* theme pink */
+    font-family: 'Playwrite AU QLD', sans-serif;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}

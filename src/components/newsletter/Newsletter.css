@@ -1,0 +1,140 @@
+.newsletter-section {
+    background-color: #F8FAFC;
+    /* soft off-white */
+    color: #0F172A;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    font-family: 'Playwrite AU QLD', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.newsletter-section p {
+    font-size: 1.05rem;
+    color: #475569;
+    max-width: 550px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #0F172A;
+    background: transparent;
+}
+
+.newsletter-form button {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    padding: 0 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #1E40AF;
+    transform: translateY(-2px);
+}
+
+.toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 1000;
+}
+
+/* -------------------------
+   RESPONSIVE BREAKPOINTS
+------------------------- */
+
+/* Small screens (mobile) */
+@media (max-width: 639px) {
+    .newsletter-section {
+        padding: 3rem 1rem;
+    }
+
+    .newsletter-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-section p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .newsletter-form input {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+        border-bottom: 1px solid #CBD5E1;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        padding: 0.9rem;
+        font-size: 1rem;
+        border-radius: 0;
+    }
+}
+
+/* Medium screens (tablet) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .newsletter-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .newsletter-section p {
+        font-size: 1rem;
+    }
+
+    .newsletter-form input {
+        font-size: 1rem;
+    }
+
+    .newsletter-form button {
+        font-size: 1rem;
+    }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+    .newsletter-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .newsletter-section p {
+        font-size: 1.1rem;
+    }
+}

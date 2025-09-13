@@ -1,0 +1,55 @@
+/* 🔹 Each card */
+.stat-card {
+    background: #ffffff;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+
+    width: 100%;
+        /* ✅ always fill parent grid cell */
+        min-width: 0;
+        /* ✅ allow shrinking, prevents overflow */
+        box-sizing: border-box;
+        /* ✅ include padding in width */
+}
+
+/* hover effect */
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* numbers */
+.stat-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2563eb;
+    /* primary blue */
+    margin-bottom: 4px;
+}
+
+/* title */
+.stat-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6b7280;
+    /* neutral gray */
+    letter-spacing: 0.3px;
+}
+
+/* 🔹 Responsive adjustments */
+@media (max-width: 600px) {
+    .stat-card {
+        padding: 12px 16px;
+        /* compact padding */
+        margin: 0;
+        /* reset margin */
+        width: 100%;
+        /* take full width */
+    }
+}

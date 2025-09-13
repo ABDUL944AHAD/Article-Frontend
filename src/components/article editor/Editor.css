@@ -1,0 +1,61 @@
+.editor-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.toolbar button {
+    background: #f5f5f5;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.toolbar button:hover {
+    background-color: #e0e0e0;
+}
+
+.toolbar button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.editor-box {
+    min-height: 250px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #FBFFFF;
+    color: #0F172A;
+}
+.editor-box:hover{
+    border-color:#2563EB ;
+}
+.editor-box .ProseMirror:focus {
+    outline: none;
+    box-shadow: none;
+    border-color:;
+}
+
+.ProseMirror p.is-empty::before {
+    content: attr(data-placeholder);
+    color: #94A3B8;
+    /* Light gray (slate-400) */
+    font-style: italic;
+    pointer-events: none;
+    float: left;
+    height: 0;
+}

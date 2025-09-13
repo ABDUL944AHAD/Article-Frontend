@@ -1,0 +1,219 @@
+.dashboard-article-detail {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    margin: 2rem auto;
+    font-family: 'Playwrite AU QLD', sans-serif;
+    color: #0F172A;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: #f1f5f9;
+    color: #0F172A;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, transform 0.15s ease;
+}
+
+.back-btn:hover {
+    background: #e2e8f0;
+    transform: translateX(-2px);
+}
+
+.dashboard-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-detail-header h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0F172A;
+    flex: 1;
+}
+
+.dashboard-detail-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.dashboard-detail-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.dashboard-detail-actions button:first-child {
+    background: #2563EB;
+    color: #ffffff;
+}
+
+.dashboard-detail-actions button:first-child:hover {
+    background: #1E40AF;
+}
+
+.dashboard-detail-actions .delete-btn {
+    background: #FF3B7F;
+    color: #ffffff;
+}
+
+.dashboard-detail-actions .delete-btn:hover {
+    background: #e63670;
+}
+
+.dashboard-article-meta {
+    font-size: 0.9rem;
+    color: #64748B;
+    margin-bottom: 1.25rem;
+}
+
+/* First image / Cover */
+.dashboard-article-cover {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    margin: 1.5rem 0 2rem 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-article-cover:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Rich Content Styling */
+.dashboard-detail-content {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #1e293b;
+}
+
+.dashboard-detail-content h1,
+.dashboard-detail-content h2,
+.dashboard-detail-content h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: #0F172A;
+}
+
+.dashboard-detail-content p {
+    margin-bottom: 1rem;
+}
+
+.dashboard-detail-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-detail-content img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* ------------------------------------
+   🔹 RESPONSIVE BREAKPOINTS
+------------------------------------ */
+
+@media only screen and (max-width: 600px) {
+    .dashboard-article-detail {
+        padding: 1rem;
+    }
+
+    .dashboard-detail-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-detail-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .dashboard-detail-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .dashboard-detail-actions button {
+        width: 100%;
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .dashboard-detail-header h2 {
+        font-size: 1.35rem;
+    }
+
+    .dashboard-detail-actions button {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .dashboard-article-detail {
+        padding: 1.5rem;
+    }
+
+    .dashboard-detail-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .dashboard-detail-actions button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .dashboard-article-detail {
+        padding: 2rem;
+    }
+
+    .dashboard-detail-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .dashboard-detail-actions button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .dashboard-article-detail {
+        max-width: 1100px;
+    }
+
+    .dashboard-detail-header h2 {
+        font-size: 2rem;
+    }
+
+    .dashboard-detail-actions button {
+        font-size: 1.05rem;
+    }
+}

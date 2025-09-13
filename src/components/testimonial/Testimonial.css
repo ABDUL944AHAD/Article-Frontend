@@ -1,0 +1,131 @@
+.testimonials {
+    background-color: #0F172A;
+    /* dark blue background */
+    color: #FBFFFF;
+    /* white text */
+    padding: 4rem 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Playwrite AU QLD', sans-serif;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: #2563EB;
+    /* accent blue */
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background-color: #1E293B;
+    /* slightly lighter than section */
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 320px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex: 1 1 280px;
+    /* ensures flexible responsive sizing */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 12px 36px rgba(37, 99, 235, 0.25),
+        /* blue tinted shadow */
+        0 6px 18px rgba(37, 99, 235, 0.2);
+    /* soft secondary blue shadow */
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-author h3 {
+    font-size: 1rem;
+    color: #2563EB;
+    font-weight: 600;
+}
+
+/* -------------------------
+   RESPONSIVE BREAKPOINTS
+------------------------- */
+
+/* Small screens (mobile) */
+@media (max-width: 639px) {
+    .testimonials {
+        padding: 3rem 1.2rem;
+    }
+
+    .testimonials h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-card {
+        max-width: 100%;
+        /* full width on mobile */
+        padding: 1.5rem;
+    }
+
+    .testimonial-card p {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-author img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonial-author h3 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium screens (tablet) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .testimonials h2 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial-card {
+        flex: 1 1 45%;
+        /* two per row */
+    }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+    .testimonials h2 {
+        font-size: 2.2rem;
+    }
+
+    .testimonial-card {
+        flex: 1 1 30%;
+        /* three per row */
+    }
+}

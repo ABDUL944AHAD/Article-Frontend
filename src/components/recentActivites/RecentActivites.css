@@ -1,0 +1,104 @@
+.recent-activities {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.recent-activities h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.activities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: calc(4 * (32px + 12px));
+    /* show ~4 items */
+    overflow-y: auto;
+    padding-right: 6px;
+    /* space for scrollbar */
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.activity-dot {
+    width: 10px;
+    height: 10px;
+    background: #2563EB;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-description {
+    font-size: 0.95rem;
+    color: #0f172a;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.activity-time {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+/* ✅ Responsive styles for ≤600px */
+@media (max-width: 600px) {
+    .recent-activities {
+        padding: 12px;
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    .recent-activities h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        text-align: center;
+        /* center on small screens */
+    }
+
+    .activities-list {
+        gap: 10px;
+        max-height: none;
+        /* let it scroll naturally */
+        overflow-y: visible;
+    }
+
+    .activity-item {
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .activity-dot {
+        width: 8px;
+        height: 8px;
+        margin-top: 5px;
+    }
+
+    .activity-description {
+        font-size: 0.9rem;
+        word-break: break-word;
+        /* prevent overflow */
+    }
+
+    .activity-time {
+        font-size: 0.75rem;
+        display: block;
+        margin-top: 2px;
+    }
+}

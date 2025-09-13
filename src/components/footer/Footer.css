@@ -1,0 +1,116 @@
+.footer {
+    background-color: #0F172A;
+    /* dark background */
+    color: #FFFFFF;
+    padding: 2.5rem 1.5rem 1.5rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-brand {
+    flex: 1;
+}
+
+.footer-logo {
+    font-family: 'Playwrite AU QLD', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.footer-tagline {
+    font-size: 0.95rem;
+    color: #CBD5E1;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-socials a {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+    color: #2563EB;
+    /* primary accent */
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: #94A3B8;
+}
+
+/* -------------------------
+   RESPONSIVE BREAKPOINTS
+------------------------- */
+
+/* Mobile: stack brand and socials vertically */
+@media (max-width: 639px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-socials {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .footer-logo {
+        font-size: 1.4rem;
+    }
+
+    .footer-tagline {
+        font-size: 0.85rem;
+    }
+}
+
+/* Tablet: slightly larger text */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .footer-logo {
+        font-size: 1.5rem;
+    }
+
+    .footer-tagline {
+        font-size: 0.9rem;
+    }
+
+    .footer-socials a {
+        font-size: 1.15rem;
+    }
+}
+
+/* Desktop: standard sizes maintained */
+@media (min-width: 1024px) {
+    .footer-logo {
+        font-size: 1.6rem;
+    }
+
+    .footer-tagline {
+        font-size: 0.95rem;
+    }
+
+    .footer-socials a {
+        font-size: 1.2rem;
+    }
+}

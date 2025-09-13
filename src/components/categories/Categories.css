@@ -1,0 +1,98 @@
+.categories-section {
+    font-family: 'Playwrite AU QLD', sans-serif;
+    padding: 4rem 1.5rem 0 1.5rem;
+    background-color: #F9FAFB;
+    text-align: center;
+    overflow: hidden;
+}
+
+.categories-header h2 {
+    font-size: 2rem;
+    color: #1F2937;
+    margin-bottom: 0.5rem;
+    
+}
+
+.categories-header p {
+    font-size: 1rem;
+    color: #6B7280;
+
+}
+
+.carousel-wrapper {
+    overflow: visible;
+    /* was: hidden */
+    padding: 2rem 0;
+    /* add vertical spacing */
+    width: 100%;
+}
+
+.categories-carousel {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+}
+
+.category-card {
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); */
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.15);
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    /* important to prevent shrinking in flex */
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    background-color: #FEF9C3;
+    border-color: #38BDF8;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.4),
+        0 0 8px rgba(254, 249, 195, 0.3);
+}
+
+.category-emoji {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.category-card h3 {
+    font-size: 1.1rem;
+    color: #1F2937;
+}
+
+@media (max-width: 600px) {
+    .categories-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .categories-header p {
+        font-size: 0.7rem;
+    }
+
+    .categories-carousel {
+        gap: 1rem;
+    }
+
+    .category-card {
+        width: 120px;
+        height: 120px;
+        border-radius: 1rem;
+    }
+
+    .category-emoji {
+        font-size: 1.6rem;
+    }
+
+    .category-card h3 {
+        font-size: 1rem;
+    }
+}

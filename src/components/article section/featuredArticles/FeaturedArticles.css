@@ -1,0 +1,113 @@
+.featured-articles {
+  padding: 4rem 1.5rem 0 1.5rem;
+  background-color: #FBFFFF;
+  text-align: center;
+  font-family: 'Playwrite AU QLD';
+}
+
+.featured-header h2 {
+  font-size: 2rem;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+}
+
+.featured-header p {
+  font-size: 1rem;
+  color: #6B7280;
+  margin-bottom: 2.5rem;
+}
+
+.featured-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.article-card {
+  background-color: #FFFFFF;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.article-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.25);
+}
+
+.article-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.article-content {
+  padding: 1.25rem;
+}
+
+.article-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #0F172A;
+}
+
+.article-content p {
+  font-size: 0.95rem;
+  color: #4B5563;
+  margin-bottom: 1rem;
+}
+
+.article-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* 📱 Mobile only (max-width: 640px) */
+@media (max-width: 640px) {
+  .featured-articles {
+    padding: 2rem 1rem;
+  }
+
+  .featured-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .featured-header p {
+    font-size: 0.85rem;
+  }
+
+  .featured-grid {
+    gap: 1rem;
+    /* tighter spacing on small screens */
+  }
+
+  .article-image {
+    height: 150px;
+  }
+
+  .article-content {
+    padding: 0.9rem;
+  }
+
+  .article-content h3 {
+    font-size: 1rem;
+  }
+
+  .article-content p {
+    font-size: 0.85rem;
+  }
+
+  .author-avatar {
+    width: 26px;
+    height: 26px;
+  }
+}
