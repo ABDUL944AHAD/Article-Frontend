@@ -1,4 +1,3 @@
-
 .signup-container {
     min-height: 100vh;
     display: flex;
@@ -6,6 +5,8 @@
     align-items: center;
     background-color: #FBFFFF;
     font-family: 'Playwrite AU QLD', sans-serif;
+    padding: 1rem;
+    /* prevent content sticking to screen edges */
 }
 
 .signup-card {
@@ -84,14 +85,14 @@
 .login-link:hover {
     text-decoration: underline;
 }
+
 .error-msg {
-        color: #dc2626;
-        /* red */
-        background: transparent;
-        /* no big box */
-        margin-top: 4px;
-        font-size: 0.8rem;
-    }
+    color: #dc2626;
+    /* red */
+    background: transparent;
+    margin-top: 4px;
+    font-size: 0.8rem;
+}
 
 .success-msg {
     color: #16a34a;
@@ -101,4 +102,44 @@
     border-radius: 6px;
     margin-bottom: 10px;
     font-size: 0.9rem;
+}
+
+/* ---------- Responsive for Mobile ---------- */
+@media (max-width: 600px) {
+    .signup-card {
+        padding: 1.2rem;
+        border-radius: 12px;
+    }
+
+    .signup-title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .signup-form label {
+        font-size: 0.85rem;
+    }
+
+    .signup-form input {
+        padding: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .signup-btn {
+        padding: 0.6rem;
+        font-size: 0.95rem;
+    }
+
+    .login-text {
+        font-size: 0.85rem;
+    }
+
+    .error-msg {
+        font-size: 0.75rem;
+    }
+
+    .success-msg {
+        font-size: 0.85rem;
+        padding: 6px;
+    }
 }
