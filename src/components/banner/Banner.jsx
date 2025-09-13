@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Banner.css";
+import { Link } from "react-router-dom";
 
 const textVariants = {
     hidden: { opacity: 0, x: -60 },
@@ -32,7 +33,7 @@ function Banner() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    Start Writing
+                    <Link to='/create-article'>Start Writing</Link>
                 </motion.button>
             </motion.div>
 
